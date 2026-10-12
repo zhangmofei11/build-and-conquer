@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build and Conquer Units - Complete Unit Guide</title>
+    <meta name="description" content="Complete guide to all units in Build and Conquer. Unit types, stats, and upgrades.">
+    <link rel="canonical" href="https://build-and-conquer.online/units.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        rts: { blue: '#3B82F6', red: '#EF4444', gold: '#F59E0B', dark: '#0f172a', green: '#22C55E' }
+                    },
+                    fontFamily: { 'tech': ['Orbitron', 'sans-serif'], 'sans': ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        .card-rts { background: linear-gradient(135deg, rgba(30,41,59,0.95) 0%, rgba(15,23,42,0.98) 100%); border: 1px solid rgba(59,130,246,0.3); }
+        .text-rts-blue { color: #3B82F6; }
+        .text-rts-gold { color: #F59E0B; }
+        .glow-blue { box-shadow: 0 0 20px rgba(59,130,246,0.4); }
+        .divider { height: 2px; background: linear-gradient(90deg, transparent, #3B82F6, #F59E0B, #3B82F6, transparent); }
+        .scanline { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(0,0,0,0.02) 0px, rgba(0,0,0,0.02) 1px, transparent 1px, transparent 2px); z-index: 9999; }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSV9HMT98E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QSV9HMT98E');
+    </script>
+</head>
+<body class="text-gray-300 antialiased">
+    <div class="scanline"></div>
+
+    <header class="card-rts sticky top-0 z-50 border-b border-rts-blue/20">
+        <div class="max-w-6xl mx-auto px-8 py-5">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-4 group">
+                    <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-rts-blue to-blue-800 flex items-center justify-center shadow-lg glow-blue">
+                        <span class="text-3xl">⚔️</span>
+                    </div>
+                    <div>
+                        <span class="font-tech font-bold text-2xl text-white tracking-wide">BUILD & CONQUER</span>
+                        <span class="block text-xs text-rts-blue tracking-widest">ROBLOX RTS</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-2">
+                    <a href="/" class="px-4 py-2 text-gray-300 hover:text-rts-blue hover:bg-rts-blue/5 rounded-lg transition-all">Home</a>
+                    <a href="units.html" class="px-4 py-2 text-rts-blue bg-rts-blue/10 rounded-lg border border-rts-blue/30 font-medium">Units</a>
+                    <a href="strategies.html" class="px-4 py-2 text-gray-300 hover:text-rts-blue hover:bg-rts-blue/5 rounded-lg transition-all">Strategies</a>
+                    <a href="maps.html" class="px-4 py-2 text-gray-300 hover:text-rts-blue hover:bg-rts-blue/5 rounded-lg transition-all">Maps</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-8 py-16">
+        <h1 class="text-4xl font-bold text-white mb-8">Unit Guide</h1>
+
+        <div class="space-y-6">
+            <div class="card-rts rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-rts-blue mb-4">Infantry Units</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-blue-900/30 rounded-lg p-4">
+                        <h3 class="font-bold text-white">Swordsman</h3>
+                        <p class="text-gray-400 text-sm">Basic melee unit. Cheap and fast to produce.</p>
+                    </div>
+                    <div class="bg-blue-900/30 rounded-lg p-4">
+                        <h3 class="font-bold text-white">Archer</h3>
+                        <p class="text-gray-400 text-sm">Ranged attacker. Good for defending against melee.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-rts rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-rts-blue mb-4">Cavalry Units</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-amber-900/30 rounded-lg p-4">
+                        <h3 class="font-bold text-white">Scout</h3>
+                        <p class="text-gray-400 text-sm">Fast movement. Great for exploration.</p>
+                    </div>
+                    <div class="bg-amber-900/30 rounded-lg p-4">
+                        <h3 class="font-bold text-white">Knight</h3>
+                        <p class="text-gray-400 text-sm">Heavy cavalry. High damage and armor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-rts rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-rts-blue mb-4">Siege Units</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-red-900/30 rounded-lg p-4">
+                        <h3 class="font-bold text-white">Catapult</h3>
+                        <p class="text-gray-400 text-sm">Long range. Damages buildings from distance.</p>
+                    </div>
+                    <div class="bg-red-900/30 rounded-lg p-4">
+                        <h3 class="font-bold text-white">Ram</h3>
+                        <p class="text-gray-400 text-sm">Siege weapon. Extra effective against walls.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-rts rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-rts-blue mb-4">Economy Units</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-green-900/30 rounded-lg p-4">
+                        <h3 class="font-bold text-white">Villager</h3>
+                        <p class="text-gray-400 text-sm">Gathers resources. Essential for economy.</p>
+                    </div>
+                    <div class="bg-green-900/30 rounded-lg p-4">
+                        <h3 class="font-bold text-white">Merchant</h3>
+                        <p class="text-gray-400 text-sm">Trade goods. Generates gold over time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-rts-blue/10 py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-8 text-center">
+            <div class="divider mb-4"></div>
+            <p class="text-gray-500 text-sm">&copy; 2026 Build and Conquer Guide</p>
+        </div>
+    </footer>
+</body>
+</html>
